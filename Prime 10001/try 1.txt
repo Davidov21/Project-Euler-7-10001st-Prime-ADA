@@ -1,0 +1,53 @@
+with Ada.Containers; use Ada.Containers;
+with Ada.Containers.Vectors;
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
+
+
+
+procedure Main is
+
+
+   package primes is new
+     Ada.Containers.Vectors
+       (Index_Type => Natural,
+        Element_Type => Float);
+   use primes;
+
+   prime_list : Vector := 2.0 & 3.0 & 5.0;
+
+   testPrime : Float := 7.0;
+   isprime : Boolean;
+   cellnum : Integer;
+
+
+begin
+
+   while prime_list.Length < 4 loop
+
+      cellnum := 1;
+      while cellnum <= Integer(prime_list.Length) loop
+
+         isprime := True;
+         if (prime_list (cellnum)) <= (Sqrt(testPrime)) and (testPrime mod prime_list(cellnum)) = 0 then
+            isprime := False;
+            exit;
+         end if;
+         cellnum:= cellnum +1;
+      end loop;
+
+      if isprime = true then
+
+         prime_list.Append(testPrime);
+
+
+      end if;
+
+      testPrime := testPrime + 2.0;
+
+
+   end loop;
+
+   Put_Line(Float'Image(prime_list(1001)));
+
+end Main;

@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\David Reynolds\Desktop\ADA Practice Projects\Prime 10001\default.gpr
+20220308190542 f0eb741d9d5463a17fed28d9a35525a7
+[BOUND OBJECT FILES]
+C:\Users\David Reynolds\Desktop\ADA Practice Projects\Prime 10001\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\David Reynolds\Desktop\ADA Practice Projects\Prime 10001\obj\
+-LC:\Users\David Reynolds\Desktop\ADA Practice Projects\Prime 10001\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-lm
+-Wl,--stack=0x2000000
